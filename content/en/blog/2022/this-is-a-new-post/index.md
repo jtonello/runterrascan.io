@@ -1,7 +1,7 @@
 
 ---
-date: 2021-05-19
-title: "Automating Terraform Security with pre-commit-terraform and Terrascan"
+date: 2022-11-10
+title: "This is a test thing"
 linkTitle: "Automating Terraform Security"
 description: ""
 author: Cesar Rodriguez ([Developer Advocate](https://github.com/cesar-rodriguez))
@@ -19,6 +19,7 @@ You can configure your CI pipelines to help enforce compliance with your coding 
 One of the drawbacks to relying on pipelines for enforcement is that they are bottlenecks in the development process.  Every code change goes through them, and one bad commit can break the build for everybody.  This can be extremely disruptive when teams are iterating quickly. One way to avoid this problem is to use a pre-commit hook to enforce standards locally on a developer’s system before pushing code to the repository. By adding a pre-commit configuration to your repository, you can help those contributing to your repository test locally to ensure their commit will not break the build once it is pushed and CI pipelines are completed. 
 
 For Terraform, one of the best projects out there to configure your repository’s pre-commit scripts is [pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform). The pre-commit-terraform project includes multiple git hooks specifically for Terraform that can help with linting, documentation, operational, and security compliance. As part of its security toolbox pre-commit-terraform includes [Terrascan](https://runterrascan.io), the static code analyzer for IaC maintained by Accurics.
+
 
 ## Terraform security with pre-commit-terraform
 
